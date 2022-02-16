@@ -89,7 +89,7 @@ function createApp(database) {
       let holiday = new Date(row.holiday);
       let newHoliday = Temporal.PlainDate.from(row.holiday);
       if (
-        date &&
+        newDate &&
         newDate.year === newHoliday.year &&
         newDate.month === newHoliday.month &&
         newDate.day === newHoliday.day
