@@ -73,7 +73,7 @@ function createApp(database) {
 
   function calculateReduction(date, newDate) {
     let reduction = 0;
-    if (date && isMonday(date) && !isHoliday(date)) {
+    if (date && isMonday(date, newDate) && !isHoliday(date)) {
       reduction = 35;
     }
     return reduction;
